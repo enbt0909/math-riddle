@@ -7,39 +7,6 @@ in dem fünften schritt soll der benutzer schon die antwort sehen und die ist ei
  */
 
 
-/*
-alert("Merken Sie sich eine Zahl zwischen 2 und 10");
-
-alert("Addieren Sie Ihre Zahl zu sich selbst");
-
-let zufallsZahl = Math.floor(Math.random() * 9) + 2;
-alert("Multiplizieren Sie das Ergebnis mit " + zufallsZahl);
-
-let jsErgebnis = zufallsZahl * 2;
-
-alert("Teilen Sie Ihr Ergebnis durch Ihre ursprüngliche Zahl");
-
-alert("Das Ergebnis von JavaScript ist: " + jsErgebnis);
-
-document.getElementById("answer").innerText = "Das Ergebnis von JavaScript ist: " + jsErgebnis;
-*/
-
-
-/**
- * document.getElementById("question").innerText = "Merken Sie sich eine Zahl zwischen 2 und 10";
-
-document.getElementById("question").innerText += "\nAddieren Sie Ihre Zahl zu sich selbst";
-
-let zufallsZahl = Math.floor(Math.random() * 9) + 2;
-document.getElementById("question").innerText += "\nMultiplizieren Sie das Ergebnis mit " + zufallsZahl;
-
-let jsErgebnis = zufallsZahl * 2;
-
-document.getElementById("question").innerText += "\nTeilen Sie Ihr Ergebnis durch Ihre ursprüngliche Zahl";
-
-document.getElementById("answer").innerText = "Das Ergebnis von JavaScript ist: " + jsErgebnis;
- */
-
 let zufallsZahl = Math.floor(Math.random() * 9) + 2;
 let jsErgebnis = zufallsZahl * 2;
 

@@ -1,16 +1,30 @@
+:root {
+    --font-size-bassic: 62.5%;
+
+    --color-blue: #0000a0;
+    --color-black: #000000dd;
+    --color-green: #00ff00;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #raetsel {
-    width: 85vw;
-    height: 45vh;
+    width: 97.5vw;
+    height: 85vh;
     font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #fff;
-    background-color: black;
+    background-color: var(--color-black);
 }
 
-.question {
-    color: rgb(0, 0, 164);
+#question {
+    color: var(--color-green);
 }
 
-.answer {
-    color: rgb(0, 255, 0);
+#answer {
+    color: var(--color-blue);
 }
