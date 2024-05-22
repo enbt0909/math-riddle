@@ -6,33 +6,37 @@ in dem vierten schritt soll der benutzer die zahl durch seine zahl teilen.
 in dem fünften schritt soll der benutzer schon die antwort sehen und die ist eine 4.
  */
 
-
-let zufallsZahl = Math.floor(Math.random() * 9) + 2;
-let jsErgebnis = zufallsZahl * 2;
+let randomNumber = Math.floor(Math.random() * 9) + 2;
+let result = randomNumber * 2;
 
 document.getElementById("reload").addEventListener("click", function() {
     location.reload();
 });
 
-let anweisungen = [
+let infos = [
     "Merken Sie sich eine Zahl zwischen 2 und 10",
     "Addieren Sie Ihre Zahl zu sich selbst",
-    "Multiplizieren Sie das Ergebnis mit " + zufallsZahl,
+    "Multiplizieren Sie das Ergebnis mit ",
     "Teilen Sie Ihr Ergebnis durch Ihre ursprüngliche Zahl"
 ];
 
-let aktuelleAnweisung = 0;
+let currentInfo = 0;
 
-function naechsteAnweisung() {
-    if (aktuelleAnweisung < anweisungen.length) {
-        let anweisung = anweisungen[aktuelleAnweisung];
-        document.getElementById("question").innerText = anweisung;
-        aktuelleAnweisung++;
+function nextInfo() {
+    if (currentInfo < infos.length) {
+        let info = infos[currentInfo];
+        if (currentInfo === 2) { // Wenn es der dritte Schritt ist
+            document.getElementById("randomNumber").innerText = randomNumber;
+        } else if (currentInfo === 3) { // 
+            document.getElementById("randomNumber").innerText = '';
+        }
+        document.getElementById("info").innerText = info;
+        currentInfo++;
     } else {
-        document.getElementById("answer").innerText = "Das Ergebnis von JavaScript ist: " + jsErgebnis;
+        document.getElementById("result").innerText = result;
     }
 }
 
-document.getElementById("next").addEventListener("click", naechsteAnweisung);
+document.getElementById("next").addEventListener("click", nextInfo);
 
-naechsteAnweisung();
+nextInfo();
