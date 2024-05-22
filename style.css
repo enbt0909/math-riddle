@@ -46,10 +46,9 @@ body {
 
 header,
 footer {
-    height: 10vh;
+    height: 10lvh;
     background-color: var(--color-dark);
 }
-
 
 #terminal__riddel {
     width: 100%;
