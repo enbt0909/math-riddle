@@ -21,6 +21,10 @@
 h1,
 header,
 #terminal__riddel,
+button,
+.button-box,
+.question-box,
+.answer-box,
 footer {
     display: flex;
     justify-content: center;
@@ -30,12 +34,6 @@ footer {
 h1 {
     font-size: calc(var(--font-size-bassic) * 2.6);
     padding: .5rem 0;
-    color: var(--color-white);
-}
-
-p {
-    width: 100%;
-
 }
 
 body {
@@ -47,24 +45,42 @@ body {
 header,
 footer {
     height: 10lvh;
-    background-color: var(--color-dark);
+    color: var(--color-white);
+    background-color: var(--color-black);
 }
 
 #terminal__riddel {
     width: 100%;
     height: 80lvh;
-    gap: 2rem;
+    gap: .5rem;
+    justify-content: space-between;
     flex-direction: column;
     background-color: var(--color-black);
 }
 
+.question-box {
+    width: 100%;
+    border: solid 1px var(--color-green);
+    background-color: var(--color-green);
+    padding: .5rem;
+    gap: .5rem;
+}
+
+.answer-box {
+    width: 100%;
+    background-color: var(--color-blue);
+    padding: .5rem;
+    gap: .5rem;
+    flex-direction: column;
+}
+
 p#question,
 p#answer {
-    width: 95vw;
+    width: 97%;
     border-radius: var(--border-radius);
     background-color: var(--color-dark);
     font-size: calc(var(--font-size-bassic) * 2);
-    padding: 1.5rem;
+    padding: 2.5rem;
     line-height: 2.5;
 }
 
@@ -82,14 +98,21 @@ p#answer {
     font-weight: bold;
 }
 
+.button-box {
+    width: 100%;
+    padding: 2rem .5rem;
+    gap: .5rem;
+
+}
+
 button {
-    width: 50vw;
-    height: 100%;
+    width: 49.25%;
+    height: 10lvh;
     border-radius: var(--border-radius);
     background-color: var(--color-blue);
     color: var(--color-white);
     font-size: calc(var(--font-size-bassic) * 2);
-    padding: 1.5rem;
+    padding: 1rem;
     cursor: pointer;
 }
 
@@ -97,3 +120,4 @@ button {
     color: var(--color-blue);
     font-weight: bold;
 }
+

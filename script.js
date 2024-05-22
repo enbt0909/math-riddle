@@ -6,7 +6,7 @@ in dem vierten schritt soll der benutzer die zahl durch seine zahl teilen.
 in dem fünften schritt soll der benutzer schon die antwort sehen und die ist eine 4.
  */
 
-let randomNumber = Math.floor(Math.random() * 9) + 2;
+let randomNumber = Math.floor(Math.random() * 99) + 2;
 let result = randomNumber * 2;
 
 document.getElementById("reload").addEventListener("click", function() {
@@ -14,7 +14,7 @@ document.getElementById("reload").addEventListener("click", function() {
 });
 
 let infos = [
-    "Merken Sie sich eine Zahl zwischen 2 und 10",
+    "Merken Sie sich eine Zahl zwischen 2 und 100",
     "Addieren Sie Ihre Zahl zu sich selbst",
     "Multiplizieren Sie das Ergebnis mit ",
     "Teilen Sie Ihr Ergebnis durch Ihre ursprüngliche Zahl"

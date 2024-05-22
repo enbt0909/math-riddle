@@ -11,12 +11,19 @@
         <h1>Mathematischer Rätsel</h1>
     </header>
     <div id="terminal__riddel">
-        <p id="question"><span id="info"></span> <span id="randomNumber"></span></p>
-        <p id="answer"">Das Ergebnis von mir ist: <span id="result"></span></p>
+        <div class="question-box">
+            <p id="question"><span id="info"></span> <span id="randomNumber"></span></p>
+        </div>
+        <div class="answer-box">
+            <p id="answer"">Das Ergebnis ist: <span id="result"></span></p>
+        </div>
+        <div class="button-box">
+            <button id="reload">Neu starten</button>
+            <button id="next">Weiter</button>
+        </div>
     </div>
     <footer>
-        <button id="next">Weiter</button>
-        <button id="reload">Neu starten</button>
+        <p>&copy; 2024 Mathematischer Rätsel Eugen Beirit</p>
     </footer>
     <script src="./script.js"></script>
 </body>
