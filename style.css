@@ -4,7 +4,7 @@
     --border-radius: .5rem;
 
     --color-dark: #000000b2;
-    --color-black: #000000;
+    --color-black: #000;
     --color-blue: #6767f5;
     --color-green: #00ff00;
     --color-white: #f5f5f5;
@@ -46,7 +46,7 @@ header,
 footer {
     height: 10lvh;
     color: var(--color-white);
-    background-color: var(--color-black);
+    background-color: var(--color-dark);
 }
 
 #terminal__riddel {
@@ -55,33 +55,35 @@ footer {
     gap: .5rem;
     justify-content: space-between;
     flex-direction: column;
-    background-color: var(--color-black);
+    background-color: var(--color-dark);
 }
 
 .question-box {
     width: 100%;
-    border: solid 1px var(--color-green);
-    background-color: var(--color-green);
     padding: .5rem;
     gap: .5rem;
+    border: ridge 1.2rem ;
+    border-radius: var(--border-radius);
 }
 
 .answer-box {
     width: 100%;
-    background-color: var(--color-blue);
     padding: .5rem;
     gap: .5rem;
     flex-direction: column;
+    border-bottom: ridge 1.2rem;
+    border-top: groove 1.2rem;
+    border-radius: var(--border-radius);
 }
 
 p#question,
 p#answer {
     width: 97%;
     border-radius: var(--border-radius);
-    background-color: var(--color-dark);
+    background-color: var(--color-black);
     font-size: calc(var(--font-size-bassic) * 2);
-    padding: 2.5rem;
-    line-height: 2.5;
+    padding: 2rem;
+    line-height: 1.7;
 }
 
 #question {
@@ -100,24 +102,44 @@ p#answer {
 
 .button-box {
     width: 100%;
-    padding: 2rem .5rem;
+    padding: 3rem .5rem;
     gap: .5rem;
-
 }
 
-button {
-    width: 49.25%;
-    height: 10lvh;
-    border-radius: var(--border-radius);
-    background-color: var(--color-blue);
-    color: var(--color-white);
-    font-size: calc(var(--font-size-bassic) * 2);
-    padding: 1rem;
-    cursor: pointer;
+.button {
+  background: #4162a8;
+  border-top: .1rem solid #38538c;
+  border-right: .1rem solid #1f2d4d;
+  border-bottom: .1rem solid #151e33;
+  border-left: .1rem solid #1f2d4d;
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  border-radius: .4rem;
+  -webkit-box-shadow: inset 0 .1rem 1rem .1rem #5c8bee, 0 .1rem 0 #1d2c4d, 0 .6rem 0 #1f3053, 0 .8rem .4rem .1rem #111111;
+  -moz-box-shadow: inset 0 .1rem 1rem .1rem #5c8bee, 0 .1rem 0 #1d2c4d, 0 .6rem 0 #1f3053, 0 .8rem .4rem .1rem #111111;
+  box-shadow: inset 0 .1rem 1rem .1rem #5c8bee, 0 .1rem 0 #1d2c4d, 0 .6rem 0 #1f3053, 0 .8rem .4rem .1rem #111111;
+  color: #fff;
+  font: bold "helvetica neue", helvetica, arial, sans-serif;
+  line-height: 1;
+  padding: 1rem 0 1.2rem 0;
+  text-align: center;
+  text-shadow: 0 -.1rem .1rem #1e2d4d;
+  width: 15rem;
+  background-clip: padding-box;
 }
 
-#randomNumber {
-    color: var(--color-blue);
-    font-weight: bold;
+.button:hover {
+  -webkit-box-shadow: inset 0 0 2rem .1rem #87adff, 0 .1rem 0 #1d2c4d, 0 .6rem 0 #1f3053, 0 .8rem .4rem.1rem #111111;
+  -moz-box-shadow: inset 0 0 2rem .1rem #87adff, 0 .1rem 0 #1d2c4d, 0 .6rem 0 #1f3053, 0 .8rem .4rem .1rem #111111;
+  box-shadow: inset 0 0 2rem .1rem #87adff, 0 .1rem 0 #1d2c4d, 0 .6rem 0 #1f3053, 0 .8rem .4rem .1rem #111111;
+  cursor: pointer;
 }
+
+.button:active {
+  -webkit-box-shadow: inset 0 .1rem 1rem .1rem #5c8bee, 0 .1rem 0 #1d2c4d, 0 .2rem 0 #1f3053, 0 .4rem .3rem 0 #111111;
+  -moz-box-shadow: inset 0 .1rem 1rem .1rem #5c8bee, 0 .1rem 0 #1d2c4d, 0 .2rem 0 #1f3053, 0 .4rem .3rem 0 #111111;
+  box-shadow: inset 0 .1rem 1rem .1rem #5c8bee, 0 .1rem 0 #1d2c4d, 0 .2rem 0 #1f3053, 0 .4rem .3rem 0 #111111;
+  transform: translateY(.4rem);
+}
+
 

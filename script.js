@@ -25,9 +25,9 @@ let currentInfo = 0;
 function nextInfo() {
     if (currentInfo < infos.length) {
         let info = infos[currentInfo];
-        if (currentInfo === 2) { // Wenn es der dritte Schritt ist
+        if (currentInfo === 2) {
             document.getElementById("randomNumber").innerText = randomNumber;
-        } else if (currentInfo === 3) { // 
+        } else if (currentInfo === 3) { 
             document.getElementById("randomNumber").innerText = '';
         }
         document.getElementById("info").innerText = info;
