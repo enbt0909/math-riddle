@@ -67,7 +67,7 @@ footer {
 }
 
 .answer-box {
-    width: 100%;
+    width: 80%;
     padding: .5rem;
     gap: .5rem;
     flex-direction: column;
