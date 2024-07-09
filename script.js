@@ -1,15 +1,24 @@
-/**
- * in dem erstem schritt soll der benutzer sich eine zahl zwischen 2 und eine 10 aussuchen und niemand soll es sehen. 
-in dem zweiten schritt soll der benutzer die seine zahl mit seiner zahl addieren.
-in dem dritten schritt soll der benutzer die zahl mit 2 multiplizieren.
-in dem vierten schritt soll der benutzer die zahl durch seine zahl teilen.
-in dem fünften schritt soll der benutzer schon die antwort sehen und die ist eine 4.
- */
+/*
+Schritt-1 Zuerst sieht der Benutzer einen Terminal großen Terminal vor sich und er soll sich eine Zahl 
+zwischen 2 und eine 10 aussuchen dabei er darf sie niemandem mitteilen.
+
+Schritt-2 Benutzer soll seine Zahl die er sich gemerkt hat, mit seiner Zahl addieren.
+
+Schritt-3 Benutzer soll die Zahl mit 2 multiplizieren.
+
+Schritt-4 Benutzer soll die Zahl durch seine Zahl teilen.
+
+Schritt-5 Benutzer soll schon die Antwort sehen und die ist seine Endantwort.
+
+Schritt-6 Benutzer soll die Seite neu laden können und nochmal von vorne anfangen.
+
+Schritt-7 Benutzer soll die Anweisungen sehen die er erledigen soll.
+*/
 
 let randomNumber = Math.floor(Math.random() * 9) + 2;
 let result = randomNumber * 2;
 
-document.getElementById("reload").addEventListener("click", function() {
+document.getElementById("reload").addEventListener("click", function () {
     location.reload();
 });
 
@@ -27,7 +36,7 @@ function nextInfo() {
         let info = infos[currentInfo];
         if (currentInfo === 2) {
             document.getElementById("randomNumber").innerText = randomNumber;
-        } else if (currentInfo === 3) { 
+        } if (currentInfo === 3) {
             document.getElementById("randomNumber").innerText = '';
         }
         document.getElementById("info").innerText = info;
