@@ -67,7 +67,6 @@ footer {
     width: 80%;
     height: 100%;
     padding: .5rem;
-    /* gap: .5rem; */
     border: ridge 1.2rem;
     border-radius: var(--border-radius);
 }
